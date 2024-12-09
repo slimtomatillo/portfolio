@@ -391,19 +391,19 @@ footer {
     box-shadow: 2px 2px 3px rgba(0,0,0,0.05);
 }
 
-.animated-name:hover .speech-bubble {
+.hover-trigger:hover .speech-bubble {
     opacity: 1;
     transform: scale(1);
     transition: all 0.3s ease;
 }
 
-.animated-name:hover .letter-h {
+.hover-trigger:hover .letter-h {
     transform: translate(-43px, -67px);
     color: var(--primary-color);
     transition: all 0.5s ease 0.3s;
 }
 
-.animated-name:hover .letter-i {
+.hover-trigger:hover .letter-i {
     transform: translate(44px, -67px);
     color: var(--primary-color);
     transition: all 0.5s ease 0.3s;
@@ -416,4 +416,10 @@ footer {
 /* Hide the placeholder text but keep its space */
 .letter-i-placeholder {
     opacity: 0;
+}
+
+/* Add some styles to make the entire hero content hoverable */
+.hover-trigger {
+    cursor: pointer;
+    padding: 2rem;  /* Add some padding to make the hover area larger */
 }
